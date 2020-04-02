@@ -5,7 +5,7 @@
   "main": "yuml.js",
   "scripts": {
   },
-  "author": "nerdfiles <nerdfiles@gmail.com",
+  "author": "nerdfiles <nerdfiles>@gmail.com",
   "license": "WTFPL",
   "dependencies": {
     "yuml-diagram": "^1.1.0"
