@@ -1,0 +1,8 @@
+// {type:sequence}
+// {generate:true}
+
+[:Client]POST /mail/send/unsent>[:Server]
+[:Client]POST /mail/compose>[:Server]
+[:Server]JSON {reponse}.>[:Client]
+[:Client]GET /mail/download>[:Server]
+[:Client]DEL /mail/delete>[:Server]

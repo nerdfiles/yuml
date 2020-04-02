@@ -1,0 +1,1 @@
+[Director|+build();]++-[Builder|+buildPart();], [Builder]^-.-[ConcreteBuilder|+buildPart();+getResult():Product;]

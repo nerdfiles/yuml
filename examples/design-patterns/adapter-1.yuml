@@ -1,0 +1,2 @@
+[＜＜interface＞＞;Target|+request();]^-.-[Adapter|+request();],
+[Adapter]-^[Adaptee|+specificRequest();]

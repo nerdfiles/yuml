@@ -1,0 +1,2 @@
+[＜＜interface＞＞;Prototype|+clone():Prototype;]^-.-[ConcretePrototypeB|+clone():Prototype;],
+[＜＜interface＞＞;Prototype|+clone():Prototype;]^-.-[ConcretePrototypeA|+clone():Prototype;]

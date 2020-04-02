@@ -1,0 +1,2 @@
+[＜＜interface＞＞;AbstractFactory|+createProduct();]^-.-[ConcreteFactory|+createProduct();],
+[＜＜interface＞＞;AbstractProduct]^-.-[ConcreteProduct]

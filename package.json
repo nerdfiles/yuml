@@ -1,0 +1,13 @@
+{
+  "name": "yuml",
+  "version": "1.0.0",
+  "description": "UML diagrams generated with yuml tools",
+  "main": "yuml.js",
+  "scripts": {
+  },
+  "author": "nerdfiles <nerdfiles@gmail.com",
+  "license": "WTFPL",
+  "dependencies": {
+    "yuml-diagram": "^1.1.0"
+  }
+}

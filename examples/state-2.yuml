@@ -1,0 +1,10 @@
+// {type:state}
+// {generate:true}
+
+(start)[Start]->(running)
+(running)[Pause]->(paused|do / wait)
+(running)[Stop]->(end)
+(Log retrieval)[Continue]->(running)
+(paused)[Unpause]->(running)
+(paused)[Data requested]->(Log retrieval|do / output log)
+(Log retrieval)->(end)

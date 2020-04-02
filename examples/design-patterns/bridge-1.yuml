@@ -1,0 +1,3 @@
+[Abstraction|-impl:Implementor;+function()]^-[RefinedAbstraction |+refinedFunction();],
+[Abstraction]<>-[Implementor|+implementation();],
+[Implementor]^-[ConceteImplementor|+implementation();]

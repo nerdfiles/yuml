@@ -1,0 +1,1 @@
+[Creator|+factoryMethod():Product;]^-[ConcreteCreator|+factoryMethod():Product;]

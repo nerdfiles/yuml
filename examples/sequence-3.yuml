@@ -1,0 +1,10 @@
+// {type:sequence}
+// {generate:true}
+
+[🧐 User]🔲 buy (click)>[🖥 Client]
+[🖥 Client]POST /payment>[⚙️ /v1/api]
+[⚙️ /v1/api]POST /v1/payment_methods>[📦 api.stripe.com]
+[📦 api.stripe.com]HTTP 200>[⚙️ /v1/api]
+[⚙️ /v1/api]HTTP 200>[🖥 Client]
+[🖥 Client]🎉 success (alert)>[🧐 User]
+

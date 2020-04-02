@@ -1,0 +1,11 @@
+// {type:state}
+// {generate:true}
+
+(start)[Start]->(running)
+(running)[Pause]->(paused)
+(running)[Stop]->(end)
+(retrieval)[Continue]->(running)
+(paused)[Unpause]->(running)
+(paused)[requested]->(retrieval)
+(retrieval)->(end)
+

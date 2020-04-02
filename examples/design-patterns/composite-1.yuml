@@ -1,0 +1,3 @@
+[Component|+opertation()]^-[Leaf|+operation();],
+[Component]^-[Composite|+operation();+add();+remove();+getChild()],
+[Component]0..*-<>[Composite]

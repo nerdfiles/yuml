@@ -1,0 +1,7 @@
+[Customer]-(Sign In)
+[Customer]-(Buy Products)
+(Buy Products)>(Browse Products)
+(Buy Products)>(Checkout)
+(Checkout)<(Add New Credit Card)
+(Checkout)
+[Office Staff]-(Processs Order)
