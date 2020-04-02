@@ -11,4 +11,4 @@ diagram.
 
 ## Usage
     
-    $ npm run gen ./example/{INPUT}.yuml ./{OUTPUT}.svg
+    $ npm run gen ./examples/{INPUT}.yuml ./{OUTPUT}.svg
