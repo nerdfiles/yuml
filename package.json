@@ -4,6 +4,8 @@
   "description": "UML diagrams generated with yuml tools",
   "main": "yuml.js",
   "scripts": {
+    "gen": "node yuml.js",
+    "help": "echo 'USAGE: npm run gen ./example/{INPUT}.yuml ./{OUTPUT}.svg'"
   },
   "author": "nerdfiles <nerdfiles>@gmail.com",
   "license": "WTFPL",
