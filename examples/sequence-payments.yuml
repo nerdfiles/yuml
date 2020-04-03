@@ -4,7 +4,7 @@
 [🧐 User]🔲 buy (click)>[🖥 Client]
 [🖥 Client]POST /payments>[⚙️ /v1/api]
 [⚙️ /v1/api]POST /v1/payment_methods>[📦 api.stripe.com]
-[📦 api.stripe.com]HTTP 200>[⚙️ /v1/api]
-[⚙️ /v1/api]HTTP 200>[🖥 Client]
+[📦 api.stripe.com]HTTP 201 Created>[⚙️ /v1/api]
+[⚙️ /v1/api]HTTP 201 Created>[🖥 Client]
 [🖥 Client]🎉 success (alert)>[🧐 User]
 
