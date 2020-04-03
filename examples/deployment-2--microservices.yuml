@@ -1,0 +1,32 @@
+// {type:deployment}
+// {generate:true}
+// @see https://stackoverflow.com/questions/40448015/microservices-architecture-in-nodejs
+// @see https://github.com/awslabs/amazon-ecs-nodejs-microservices
+// @see https://community.risingstack.com/deploying-node-js-microservices-to-aws-using-docker/
+// @see https://www.nginx.com/blog/building-microservices-using-an-api-gateway/
+// @see https://stackoverflow.com/questions/35756663/api-gateway-vs-reverse-proxy
+// @see https://github.com/Beh01der/docker-api-gateway-example
+
+[note: Client sends HTTP/HTTPS requests and receives HTTP/HTTPS responses][Client]-[Load Balancer (Haproxy)]
+[Load Balancer (Haproxy)]-[Client]
+[Load Balancer (Haproxy)]-[API Gateway (Node.js)]
+[API Gateway (Node.js)]-[Load Balancer (Haproxy)]
+[note: API Gateway should check Microservice 𝞪 status from Discovery and the location][API Gateway (Node.js)]-[Discovery (Consul)]
+[note: Discovery will tell API Gateway the location and port number for the request microservice][Discovery (Consul)]-[API Gateway (Node.js)]
+[note: API Gateway should send request to Microservice 𝞪][API Gateway (Node.js)]-[Microservice 1 (Docker 1)]
+[API Gateway (Node.js)]-[Microservice 2 (Docker 2)]
+[API Gateway (Node.js)]-[Microservice 3 (Docker 3)]
+[API Gateway (Node.js)]-[Microservice 4 (Docker 4)]
+[Microservice 1 (Docker 1)]-[API Gateway (Node.js)]
+[Microservice 1 (Docker 1)]-[Discovery (Consul)]
+[Microservice 2 (Docker 2)]-[Discovery (Consul)]
+[Microservice 3 (Docker 3)]-[Discovery (Consul)]
+[Microservice 4 (Docker 4)]-[Discovery (Consul)]
+[Microservice 1 (Docker 1)]-[DB 1 (Docker 1)]
+[Microservice 2 (Docker 2)]-[DB 2 (Docker 2)]
+[Microservice 3 (Docker 3)]-[DB 3 (Docker 3)]
+[Microservice 4 (Docker 4)]-[DB 4 (Docker 4)]
+[DB 1 (Docker 1)]-[Archive (Docker 5)]
+[DB 2 (Docker 2)]-[Archive (Docker 5)]
+[DB 3 (Docker 3)]-[Archive (Docker 5)]
+[DB 4 (Docker 4)]-[Archive (Docker 5)]
