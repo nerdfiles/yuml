@@ -1,0 +1,7 @@
+// {type:sequence}
+// {generate:true}
+
+[Client]createCustomer(12345)>[Factory]
+[Factory]return Customer {JSON}.>[Client]
+[Client]addCustomer(12345)>[Repository]
+[Repository]insertRow>[Database]
