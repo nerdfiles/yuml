@@ -1,0 +1,13 @@
+[Profile]<>-downloads*>[Post]++-0..*>[FeedItem]
+
+[Post]-[note: Aggregate Root]
+
+[≪IUser≫;Profile|-password: string;+email: string;+username: string;+phone_number: string|create_post(): bool]
+
+[Login|-password: string;+email: string;-username: string|login(user,pass)]
+[Login]->[User_account]
+[Firebase|validates()]-0..contains*>[User_account]
+[Firebase]++-0..*>[Login]
+
+[User_account]-uses>[Role|type: string]
+[Role]->[≪IUser≫;Profile]

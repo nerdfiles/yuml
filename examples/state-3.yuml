@@ -9,3 +9,19 @@
 (paused)[requested]->(retrieval)
 (retrieval)->(end)
 
+interface Model {
+  name: 'module'
+}
+
+let start = async (running) : <Model> => {
+  let relation = {
+    state: 'unload'
+  }
+  Object.extend(running, relation)
+  return (running)
+}
+
+
+start({
+  init: 'aRb'
+})

@@ -2,9 +2,25 @@
 // {generate:true}
 
 (start)[Start]->(Simulator running)
+
+translates to
+
+let start = (): <Start> => ({});
+
+let start = (): <Start> => {
+  let simulator_running;
+  return simulator_running;
+};
+
+Find the opening bracket to conform the function name (e.g., "Start" which 
+represents a driver of application state)
+
+//
+//
+//
+
 (Simulator running)[Pause]->(Simulator paused|do / wait)
 (Simulator running)[Stop]->(end)
 (Log retrieval)[Continue]->(Simulator running)
-(Simulator paused)[Unpause]->(Simulator running)
 (Simulator paused)[Data requested]->(Log retrieval|do / output log)
 (Log retrieval)->(end)

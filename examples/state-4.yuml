@@ -1,0 +1,26 @@
+# Structure of contingency
+
+Notice the space between the end of the parenthetical and the start of the 
+thick arrow, this is at an intersection of content and form, where category 
+and functional interplay demarcate processuation of the real:
+
+## YUML
+
+```
+(start)[Start]->(running)
+```
+
+## JavaScript
+
+```
+let start = (outcome) -> ({ output: () -> ({ ...outcome }); })
+```
+
+## Syntactognomy
+
+```
+({category})[{Function}]->(output)
+```
+
+So YUML and JavaScript more or less live in the same syntactonomic space of 
+expression. Just write your JavaScript as YUML documents already!

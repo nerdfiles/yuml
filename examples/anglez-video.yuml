@@ -1,0 +1,28 @@
+[User|+user_id: string;+username: string;-role: string;+fb_id: string; +twitter_id: string|create_user();update_user();delete_user();get_user();]-has*>[Feed]
+
+[Firebase]-contains*>[Post|+post_id: string;+likes: number;+loops: number;+comments: array;+created_at: datetime;+location: string;+status: string;+type: string;+content: string|add_post();update_post();delete_post();associate_with_user();]
+
+[Address]-queries*>[GeoService|lookup_location();]
+
+[Post]-queries*>[GeoService|lookup_location();]
+
+[User]-contains*>[MessageThread|+thread_id: string;+created_at: datetime]
+
+[Feed|get_videos();]-queries*>[RecommendationService|query_posts();]-reads*>[Firebase]
+[AuthenticationService|authenticate();forgot_password();reset_password()]-authenticates*>[User]
+[Firebase|validate()]-contains*>[User]
+
+[User]-contains*>[Follower|add_follower();delete_follower();]
+[AuthenticationService]-checks*>[Firebase]
+
+[User]-contains*>[Profile|+phone_number: string|+email: string]-contains*>[Photo|+photo_url: string|add_photo();update_photo();delete_photo()]
+[Profile]-contains*>[Address|add_address();update_address();]
+[User]-associates_with*>[VideoService|+stream_id: string|save_url();update_url();delete_url();]
+[VideoService]-polls*>[Firebase]
+[User]-queries*>[SearchService|save_search();delete_search();]
+[SearchService]-queries*>[Firebase]
+[Policy|add_policy();delete_policy();]-restricts*>[User]
+
+[Post]-contains*>[Comment|+comment_id: string;+content: string;+created_at: datetime;+likes: number]
+
+[Post]-associates_with*>[User]

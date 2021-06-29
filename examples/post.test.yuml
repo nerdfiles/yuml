@@ -1,0 +1,5 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+
+[Order]*-*>[Product|EAN_Code|promo_price()]
