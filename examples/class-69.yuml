@@ -1,0 +1,12 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+
+[Test]<->[Product]
+[Test1]<->[Product1]
+[Test2]<->[Product2]
+[Test3]<->[Product3]
+[Test4]<->[Product4]
+[Test5]<->[Product5]
+[Test6]<->[Product6]
+[Test7]<->[Product7]
