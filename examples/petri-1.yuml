@@ -1,7 +1,7 @@
 // {type:activity}
 // {generate:true}
 
-(P1)->|b|->(P3)
-(P2)->|b|->(P4)
+(⚫️ ⚫️ P1)->|b|->(P3)
+(⚫️ P2)->|b|->(P4)
 |b|->(P5)
 
