@@ -2,8 +2,8 @@
 // {generate:true}
 // @description confusion
 
-(● P1)->(P4)
-(● P1)->(P2)
-(P2)->(P5)
-(P2)->(P6)
+(● P1)[test]->(P4)
+(● P1)->(● P2)
+(● P2)->(P5)
+(● P2)->(● P6)
 
