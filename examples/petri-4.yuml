@@ -1,0 +1,6 @@
+// {type:activity}
+// {generate:true}
+
+|x|->(P1)[test]->|b|
+(P1)[test]->|a|
+
