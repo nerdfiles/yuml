@@ -1,0 +1,6 @@
+[A]-.[R:contract.app]-R[B]
+[A]-.[self:{ "self": fn("www.contract.app")}]-this[A]
+[Object.prototype]-[hw]
+[hw]-[math]
+[hw]-[js]
+
