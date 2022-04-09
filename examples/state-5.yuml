@@ -1,0 +1,7 @@
+// {type: state}
+// {generated: true}
+// {modal: true}
+
+(a->b)[⧂]->(b->c)
+(b->c)[⧂]->(c->d)
+(b->c)[⧂]->(c->d)

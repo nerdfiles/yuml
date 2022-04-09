@@ -1,0 +1,7 @@
+// {type: state}
+// {generated: true}
+
+(p->q)[aRb]->(q->r)
+(aRb)[hdddhdddhddd.hdddhdddhddd.hdddhdddhddd]->(aRb)
+(aRb)[hppphdddhddd.hdddhdddhddd.hdddhdddhddd]->(aRb)
+(aRb)[hdddhppphddd.hdddhdddhddd.hdddhdddhddd]->(aRb)

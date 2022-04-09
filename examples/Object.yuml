@@ -1,3 +1,6 @@
+// {type: state}
+// {generated: true}
+
 [A]-.[R:contract.app]-R[B]
 [A]-.[self:{ "self": fn("www.contract.app")}]-this[A]
 [Object.prototype]-[hw]
