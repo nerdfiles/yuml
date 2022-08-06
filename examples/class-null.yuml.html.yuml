@@ -1,0 +1,5 @@
+// {type:class}
+// {generate:true}
+
+[module]->[lock]
+[module]->[event]
